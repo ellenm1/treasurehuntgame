@@ -9,110 +9,151 @@ how are they determined? random (3 out of 10), predetermined by author?
 is there a time limit?
 
 */
+
+
+
+
+  //form: 
+/*
+what is the stimulus question?
+list every image and give each a name. 
+list every container layer (drawer1, drawer2, cabinet1, cabinet2, box1, box2, bottle1, bottle2)
+list every item
+what are the correct items?
+how are they determined? random (3 out of 10), predetermined by author?
+is there a time limit?
+
+*/
   
-    var sources = {
-    	apple:		'apple.png',
-		apple_highlight:	'apple_glow.png',
-		banana:		'banana.png',
-		banana_highlight:		'banana_glow.png',
-		button:		'button.png',
-		button_highlight:	'button_glow.png',
-    	discoball:	'discoball.png',
-		discoball_highlight:'discoball_glow.png',
-		key:		'key.png',
-		key_highlight:		'key_glow.png',
-		lightbulb:	'lightbulb.png',
-		lightbulb_highlight:	'lightbulb_glow.png',
-		pencil:		'pencil.png',
-		pencil_highlight:	'pencil_glow.png',
-    	pliers:		'pliers.png',
-		pliers_highlight:'pliers_glow.png',
-    	squirtgun:	'squirtgun.png',
-		squirtgun_highlight:'squirtgun_glow.png',
-    	thimble:	'thimble.png',
-		thimble_highlight:'thimble_glow.png',
-     	//groboto: 	'groboto.jpg',
+  
+     	
+     var sources = {
+       tubeEndoTrachealAdult:                  'tubeEndoTrachealAdult.png',
+       tubeEndoTrachealAdult_highlight:        'tubeEndoTrachealAdult_highlight.png',
+       styleIntubating:                  'styleIntubating.png',
+       styleIntubating_highlight:        'styleIntubating_highlight.png',
+       tubeendotrachealpeds:                  'tubeendotrachealpeds.png',
+       tubeendotrachealpeds_highlight:        'tubeendotrachealpeds_highlight.png',
+       airwayBerman:                  'airwayBerman.png',
+       airwayBerman_highlight:        'airwayBerman_highlight.png',
+       detectorC02Adult:                  'detectorC02Adult.png',
+       detectorC02Adult_highlight:        'detectorC02Adult_highlight.png',
+       detectorCO2Peds:                  'detectorCO2Peds.png',
+       detectorCO2Peds_highlight:        'detectorCO2Peds_highlight.png',
+       O2FlowMeter:                  'O2FlowMeter.png',
+       O2FlowMeter_highlight:        'O2FlowMeter_highlight.png',
+       lockyellow:                  'lockyellow.png',
+       lockyellow_highlight:        'lockyellow_highlight.png',
+       batteries:                  'batteries.png',
+       batteries_highlight:        'batteries_highlight.png',
+       tipsuctionyankauer:                  'tipsuctionyankauer.png',
+       tipsuctionyankauer_highlight:        'tipsuctionyankauer_highlight.png',
+       tape:                  'tape.png',
+       tape_highlight:        'tape_highlight.png',
+       povidoneiodine:                  'povidoneiodine.png',
+       povidoneiodine_highlight:        'povidoneiodine_highlight.png',
+       something:                  'something.png',
+       something_highlight:        'something_highlight.png',
+       millerblade:                  'millerblade.png',
+       millerblade_highlight:        'millerblade_highlight.png',
+       depressorTongue:                  'depressorTongue.png',
+       depressorTongue_highlight:        'depressorTongue_highlight.png',
+       penlight:                  'penlight.png',
+       penlight_highlight:        'penlight_highlight.png',
+       //drawer1:                  'drawer1open.png',
+       //drawer1_highlight:        'drawer1open_highlight.png',
         cart: 		'cart.png',
-        drawer1:	'drawerEmpty.png',
-        drawer2:	'drawerEmpty.png',
-        drawer3:	'drawerEmpty.png',
-        drawer4:	'drawerEmpty.png',
-        drawer5:	'drawerEmpty.png',
-        drawer6:	'drawerEmpty.png',
-        drawerhandle1:'drawers/drawerhandle1.png',
-        drawerhandle1_highlight:'drawers/drawerhandle1_highlight.png',
-        drawerhandle2:'drawers/drawerhandle2.png',
-        drawerhandle2_highlight:'drawers/drawerhandle2_highlight.png',
-        drawerhandle3:'drawerhandle3.jpg',
-        drawerhandle3_highlight:'drawerhandle3_highlight.jpg',
-        drawerhandle4:'drawerhandle4.jpg',
-        drawerhandle4_highlight:'drawerhandle4_highlight.jpg',
-        drawerhandle5:'drawerhandle5.jpg',
-        drawerhandle5_highlight:'drawerhandle5_highlight.jpg',
-        drawerhandle6:'drawerhandle6.jpg',
-        drawerhandle6_highlight:'drawerhandle6_highlight.jpg'     
+        drawer1:	'drawer1.png',
+        drawer2:	'drawer2.png',
+        drawer3:	'drawer3.png',
+        drawer4:	'drawer4.png',
+        drawer5:	'drawer5.png',
+        drawer6:	'drawer6.png',
+        drawerhandle1:'drawerhandle1.png',
+        drawerhandle1_highlight:'drawerhandle1_highlight.png',
+        drawerhandle2:'drawerhandle2.png',
+        drawerhandle2_highlight:'drawerhandle2_highlight.png',
+        drawerhandle3:'drawerhandle3.png',
+        drawerhandle3_highlight:'drawerhandle3_highlight.png',
+        drawerhandle4:'drawerhandle4.png',
+        drawerhandle4_highlight:'drawerhandle4_highlight.png',
+        drawerhandle5:'drawerhandle5.png',
+        drawerhandle5_highlight:'drawerhandle5_highlight.png',
+        drawerhandle6:'drawerhandle6.png',
+        drawerhandle6_highlight:'drawerhandle6_highlight.png'     
     };
 
 var layerList = {
 	drawer1: {
-		x:350,
-		y:-450,
+		x:450,
+		y:-560,
 		type:'drawer',
 		background:'drawer1.png',
+		defaultImg:'drawer1.png',
 		animation_open:'',
 		animation_close:''
 	},
 	drawer2:{
-		x:350,
-		y:-450,
+		x:450,
+		y:-560,
 		type:'drawer',
-		background:'drawer2.png',
+		background:'drawer1.png',
+		defaultImg:'drawer1.png',
 		animation_open:'',
 		animation_close:''	
 	},	
 	drawer3:{
-		x:350,
-		y:-450,
+		x:450,
+		y:-560,
 		type:'drawer',
 		background:'drawer3.png',
+		defaultImg:'drawer3.png',
 		animation_open:'',
 		animation_close:''
 	},
 	drawer4:{
-		x:350,
-		y:-450,
+		x:450,
+		y:-560,
 		type:'drawer',
 		background:'drawer4.png',
+		defaultImg:'drawer4.png',
 		animation_open:'',
 		animation_close:''
 	},
 	drawer5:{
-		x:350,
-		y:-450,
+		x:450,
+		y:-560,
 		type:'drawer',
 		background:'drawer5.png',
+		defaultImg:'drawer5.png',
 		animation_open:'',
 		animation_close:''
 	},
 	drawer6:{
-		x:350,
-		y:-450,
+		x:450,
+		y:-560,
 		type:'drawer',
 		background:'drawer6.png',
+		defaultImg:'drawer6.png',
 		animation_open:'',
 		animation_close:''
 	},
 	drawerHandlesLayer:{
 		type:'static',
-		x:0,
-		y:0
+		//x:0,
+		//y:600   
+		x:30,
+		y:240
 	},
 	targetLayer:{
 		type:'static',
-		x:0,
-		y:0
-	}
-	 		
+		//x:0,
+		//y:0,
+		//z:100,
+		x:450,
+		y:250
+	},
+ 	
 };
 
 
@@ -123,6 +164,7 @@ var itemList = {
 		x:0,
 		y:0,
 		type:'container',
+		defaultImg: {source:'drawer1.png'},
 		drawHitRegion:false,
 		draggable:false
 	},
@@ -131,6 +173,7 @@ var itemList = {
 		x:0,
 		y:0,
 		type:'container',
+		defaultImg: {source:'drawer2.png'},
 		drawHitRegion:false,
 		draggable:false
 	},
@@ -139,6 +182,7 @@ var itemList = {
 		x:0,
 		y:0,
 		type:'container',
+		defaultImg: {source:'drawer3.png'},
 		drawHitRegion:false,
 		draggable:false
 	},
@@ -147,6 +191,7 @@ var itemList = {
 		x:0,
 		y:0,
 		type:'container',
+		defaultImg: {source:'drawer4.png'},
 		drawHitRegion:false,
 		draggable:false
 	},
@@ -155,6 +200,7 @@ var itemList = {
 		x:0,
 		y:0,
 		type:'container',
+		defaultImg: {source:'drawer5.png'},
 		drawHitRegion:false,
 		draggable:false
 	},
@@ -163,207 +209,268 @@ var itemList = {
 		x:0,
 		y:0,
 		type:'container',
+		defaultImg: {source:'drawer6.png'},
 		drawHitRegion:false,
 		draggable:false
 	},
-	 apple: {
-	 	title:'Apple',
-	 	shortname:'apple',
-        container:'drawer1',
-        x: 150,
-        y: 90,
-		type:'findable',
-        defaultImg: {source:'apple.png'},
-        highlight: {source:'apple_glow.png'},
-        drawHitRegion:true,
-        draggable:true  
-    }, 
-     banana: {
-     	title:'Banana',
-     	shortname:'banana',
-        container:'drawer2',
-        x: 290,
-        y: 60,
-		type:'findable',
-        defaultImg: {source:'banana.png'},
-        highlight: {source:'banana_glow.png'},
-       //active:{source:'discoball_puff.png' },
-        //animation: function(){},
-        drawHitRegion:true,
-        draggable:true  
-    },  
-	button: {
-		title:'Button',
-		shortname:'button',
-        container:'drawer3',
-        x: 190,
-        y: 20,
-		type:'findable',
-        defaultImg: {source:'button.png'},
-        highlight: {source:'buttonl_glow.png'},
-        //active:{source:'button_puff.png' },
-        //animation: function(){},
-        drawHitRegion:true,
-        draggable:true  
-    }, 
-   /* corkscrew: { //image is corrupt, needs to be recreated
-        container:'drawer6',
-        x: 190,
-        y: 20,
-		type:'findable',
-        defaultImg: {source:'corkscrew.png'},
-        highlight: {source:'corkscrew_glow.png'},
-        //active:{source:'discoball_puff.png' },
-        //animation: function(){},
-        drawHitRegion:true,
-        draggable:true  
-    },  */
-	discoball: {
-		title:'Discoball',
-		shortname:'discoball',
-        container:'drawer4',
-        x: 190,
-        y: 20,
-		type:'findable',
-        defaultImg: {source:'discoball.png'},
-        highlight: {source:'discoball_glow.png'},
-        //active:{source:'discoball_puff.png' },
-        //animation: function(){},
-        drawHitRegion:true,
-        draggable:true  
-    }, 
-    lightbulb: {
-    	title:'Light Bulb',
-    	shortname:'lightbulb',
-        container:'drawer5',
-        x: 190,
-        y: 20,
-		type:'findable',
-        defaultImg: {source:'lightbulb.png'},
-        highlight: {source:'lightbulb_glow.png'},
-        //active:{source:'pencil_puff.png' },
-        //animation: function(){},
-        drawHitRegion:true,
-        draggable:true  
-    },  
-    pencil: {
-    	title:'Pencil',
-    	shortname:'pencil',
-        container:'drawer6',
-        x: 290,
-        y: 80,
-		type:'findable',
-        defaultImg: {source:'pencil.png'},
-        highlight: {source:'pencil_glow.png'},
-        //active:{source:'pencil_puff.png' },
-        //animation: function(){},
-        drawHitRegion:true,
-        draggable:true  
-    },  
-    pliers: {
-    	title:'Pliers',
-    	shortname:'pliers',
-        container:'drawer1',
-        x: 140,
-        y: 20,
-		type:'findable',
-        defaultImg: {source:'pliers.png'},
-        highlight: {source:'pliers_glow.png'},
-        //active:{source:'pliers_puff.png' },
-        //animation:function(){},
-        drawHitRegion:true,
-        draggable:true     
-    },
-    squirtgun: {
-    	title:'Squirt Gun',
-    	shortname:'squirtgun',
-        container:'drawer2',
-        x: 90,
-        y: 20,
-		type:'findable',
-        defaultImg: {source:'squirtgun.png'},
-        highlight: {source:'squirtgun_glow.png'},
-        active:{source:'squirtgun_puff.png' },
-        //animation: function(){},
-        drawHitRegion:true,
-        draggable:true    
-        },
-    thimble: {
-    	title:'Thimble',
-    	shortname:'thimble',
-        container:'drawer3',
-        x: 40,
-        y: 20,
-		type:'findable',
-        defaultImg: {source:'thimble.png' },
-        highlight: {source:'thimble_glow.png'},
-        active:{source:'thimble_puff.png' },
-        //animation: function(){}, 
-        drawHitRegion:true,
-        draggable:true     
-    },
-    drawerhandle1:{
+	 tubeEndoTrachealAdult: {
+   container:'drawer1',
+   title:'Endotracheal Tube Adult',
+    x:322,
+    y:32,
+    width:258,
+    height:366,
+    type:'findable',
+    highlight: {source:'tubeEndoTrachealAdult_highlight'},
+    draggable:true
+ },
+  styleIntubating: {
+    container:'drawer1',
+    title:'Intubating Style',
+    x:43,
+    y:41,
+    width:546,
+    height:483,
+    type:'findable',
+    highlight: {source:'styleIntubating_highlight'},
+    draggable:true
+ },
+  tubeendotrachealpeds: {
+   container:'drawer1',
+   title:'Endotracheal Tube Pediatric',
+    x:98,
+    y:17,
+    width:357,
+    height:445,
+    type:'findable',
+    highlight: {source:'tubeendotrachealpeds_highlight'},
+    draggable:true
+ },
+  airwayBerman: {
+   container:'drawer2',
+   title:'Berman Airway',
+    x:422,
+    y:88,
+    width:169,
+    height:242,
+    type:'findable',
+    highlight: {source:'airwayBerman_highlight'},
+    draggable:true
+ },
+  detectorC02Adult: {
+   container:'drawer4',
+    title:'CO2 Detector, Adult',
+    x:448,
+    y:382,
+    width:135,
+    height:120,
+    type:'findable',
+    highlight: {source:'detectorC02Adult_highlight'},
+    draggable:true
+ },
+  detectorCO2Peds: {
+   container:'drawer6',
+    title:'CO2 Detector, Peds',
+    x:274,
+    y:407,
+    width:173,
+    height:95,
+    type:'findable',
+    highlight: {source:'detectorCO2Peds_highlight'},
+    draggable:true
+ },
+  O2FlowMeter: {
+   container:'drawer1',
+    title:'O2 Flow Meter',
+    x:76,
+    y:394,
+    width:129,
+    height:126,
+    type:'findable',
+    highlight: {source:'O2FlowMeter_highlight'},
+    draggable:true
+ },
+  lockyellow: {
+   container:'drawer2',
+    title:'Yellow Lock',
+    x:652,
+    y:236,
+    width:126,
+    height:170,
+    type:'findable',
+    highlight: {source:'lockyellow_highlight'},
+    draggable:true
+ },
+  batteries: {
+   container:'drawer6',
+    title:'Batteries',
+    x:690,
+    y:283,
+    width:78,
+    height:97,
+    type:'findable',
+    highlight: {source:'batteries_highlight'},
+    draggable:true
+ },
+  tipsuctionyankauer: {
+   container:'drawer5',
+    title:'Yankauer Suction Tip',
+    x:615,
+    y:273,
+    width:69,
+    height:70,
+    type:'findable',
+    highlight: {source:'tipsuctionyankauer_highlight'},
+    draggable:true
+ },
+  tape: {
+   container:'drawer1',
+    title:'Tape',
+    x:658,
+    y:327,
+    width:91,
+    height:79,
+    type:'findable',
+    highlight: {source:'tape_highlight'},
+    draggable:true
+ },
+  povidoneiodine: {
+   container:'drawer1',
+    title:'Povidone Iodine',
+    x:663,
+    y:399,
+    width:110,
+    height:48,
+    type:'findable',
+    highlight: {source:'povidoneiodine_highlight'},
+    draggable:true
+ },
+  something: {
+   container:'drawer4',
+    title:'Something',
+    x:579,
+    y:378,
+    width:208,
+    height:143,
+    type:'findable',
+    highlight: {source:'something_highlight'},
+    draggable:true
+ },
+  millerblade: {
+   container:'drawer1',
+    title:'Miller Blade',
+    x:595,
+    y:44,
+    width:193,
+    height:267,
+    type:'findable',
+    highlight: {source:'millerblade_highlight'},
+    draggable:true
+ },
+  depressorTongue: {
+   container:'drawer1',
+    x:764,
+    y:126,
+    width:19,
+    height:155,
+    type:'findable',
+    highlight: {source:'depressorTongue_highlight'},
+    draggable:true
+ },
+  penlight: {
+   container:'drawer1',
+    x:685,
+    y:132,
+    width:21,
+    height:99,
+    type:'findable',
+    highlight: {source:'penlight_highlight'},
+    draggable:true
+ },
+   
+    drawerhandle1:{//airway
         container:'drawerHandlesLayer',
-        highlight: {source:'drawerhandle1_highlight.jpg'},
         x:64,
-        y:178,
+         y:206,
 		type:'trigger',
+		highlight: {source:'drawerhandle1_highlight.jpg'},
+		clickHandler:'drawerOpener',
+		args:'drawer1',
         drawHitRegion:false,
         draggable:false 
-    },       
-    drawerhandle2:{
+    } ,       
+   drawerhandle2:{ //blood draw
     	container:'drawerHandlesLayer',
-    	highlight: {source:'drawerhandle2_highlight.jpg'},
         x:64,
-        y:206,
+        y:243,
 		type:'trigger',
+		highlight:  {source:'drawerhandle2_highlight.jpg'},
+		clickHandler:'drawerOpener',
+		args:'drawer2',
         drawHitRegion:false,
         draggable:false 
 
     },        
-    drawerhandle3:{
+    drawerhandle3:{ //infusion
     	container:'drawerHandlesLayer',
-    	highlight: {source:'drawerhandle3_highlight.jpg'},
         x:64,
-        y:236,
+        y:279,
 		type:'trigger',
+		highlight: {source:'drawerhandle3_highlight.jpg'},
+		clickHandler:'drawerOpener',
+		args:'drawer3',
         drawHitRegion:false,
         draggable:false 
 
     },                
-    drawerhandle4:{
+    drawerhandle4:{ //cutdown supplies
     	container:'drawerHandlesLayer',
-    	highlight: {source:'drawerhandle4_highlight.jpg'},
         x:64,
-        y:268,
+        y:317,
 		type:'trigger',
+		highlight: {source:'drawerhandle4_highlight.jpg'},
+		clickHandler:'drawerOpener',
+		args:'drawer4',
         drawHitRegion:false,
         draggable:false 
     },          
-    drawerhandle5:{
+    drawerhandle5:{ //suction
     	container:'drawerHandlesLayer',
-    	highlight: {source:'drawerhandle5_highlight.jpg'},
         x:64,
-        y:298,
+        y:353,
 		type:'trigger',
+		highlight: {source:'drawerhandle5_highlight.jpg'},
+		clickHandler:'drawerOpener',
+		args:'drawer5',
         drawHitRegion:false,
         draggable:false 
     },          
-    drawerhandle6:{
+    drawerhandle6:{ //drug box
     	container:'drawerHandlesLayer',
-    	highlight: {source:'drawerhandle6_highlight.jpg'},
         x:64,
-        y:360,
+        y:430,
 		type:'trigger',
+		clickHandler:'drawerOpener',
+		highlight: {source:'drawerhandle6_highlight.jpg'},
+		args:'drawer6',
         drawHitRegion:false,
         draggable:false 
     }            
 };
 
+ var correctItems={
+	thimble:{},
+	discoball:{}
+ }
+ 
+ 
+ 
+
+
 /* var correctItems={
 	thimble:{},
 	discoball:{}
- }*/
+ }
  
  
 
@@ -384,5 +491,6 @@ var gametype = 1; //select a number of items randomly from the list. When user f
 var numCorrectItms = 6;
 var stimulusText = 'Find the items listed and drag them to the blue target!';
 var correctMsg="Correct!"
-var incorrectMsg="Wrong! Try again!";
+var incorrectMsg="Sorry, not one of the items! Try again!";
 
+ 

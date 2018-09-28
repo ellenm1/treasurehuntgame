@@ -1,0 +1,77 @@
+ 
+      body {
+        margin: 0px;
+        padding: 0px;
+      }
+      #msg{
+     	position:absolute;
+      	right:0px;
+      	top:0px;
+      	display:block;
+      	width:200px;
+      	font:10px Arial;
+      }
+     
+      #container {
+      	position:absolute;
+       /*	background-color:#CCC;*/
+     	border:1px solid red;
+       	top:150px;
+      	top:0px;
+      }
+      
+      #status, #stimulus{ 
+      			font:bold 14px Arial Narrow, Helvetica Condensed, sans-serif;
+      			padding:12px; 
+      			text-align:center;
+      			z-index:1000;
+      			position:relative;/*http://stackoverflow.com/questions/3980642/displaying-a-div-over-a-canvas*/
+      			position:absolute;
+      			top:0px;
+      			}
+      #stimulus{ 
+      font-size:16px; 
+      left:15px;
+      width:450px;
+     /* height:100px;*/
+      background-color:#670000;
+      color:#FFFFFF;
+     }
+      #correctItemsList{
+     
+       columns:200px 2;
+       width:100%;
+  
+      }
+      
+      .correctItem{ 
+    
+      text-align:left;
+      display:block;
+      /*width:220px;
+      margin-right:6px;*/
+      padding:0 6px 0 6px;
+      color:white; 
+      background:none; 
+       }
+      .correctItem:before{
+      	 content:  "\276F "; /*https://css-tricks.com/put-checkmarks-next-to-visted-links-with-pure-css/ */
+      	 color:red;
+      	 margin-right:10px;
+      }
+      .correctItem.found {
+      	text-decoration:line-through;
+      	color:#CCCCCC;
+      	}
+      .correctItem.found:before{
+      	//content:  "\2611 "; /*https://www.toptal.com/designers/htmlarrows/symbols/  */
+      	content:  "\2714 ";
+      	color:green;
+      	text-decoration:none;
+      }
+      .success{ color:#2FA40A }
+      .fail{ color:red; }
+      #status{color:red;  width:400px;left:600px; font-style:normal;}
+      #remainder{font-style:bold;}
+      
+   
